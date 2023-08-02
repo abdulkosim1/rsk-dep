@@ -9,8 +9,8 @@ from drf_yasg import openapi
 from django.shortcuts import get_object_or_404
 from drf_yasg.utils import swagger_auto_schema
 
-from services.authentication import ClientTokenAuthentication
-from apps.talon.serializers import TerminalTalonCreateSerializer
+from main.services.authentication import ClientTokenAuthentication
+from talon.serializers import TerminalTalonCreateSerializer
 from . models import Document, Terminal, Service
 from .serializers import (
     TerminalSerializer, 

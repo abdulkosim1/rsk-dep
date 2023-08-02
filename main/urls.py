@@ -38,15 +38,15 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('admin/', admin.site.urls),
-    path('admin_panel/', include('apps.admin_panel.urls'),),
-    path('branch/', include('apps.branch.urls'),),
-    path('employee/', include('apps.employee.urls'),),
-    path('queue/', include('apps.eqs.urls'),),
-    path('talon/', include('apps.talon.urls'),),
-    path('base/', include('apps.base.urls'),),
-    path('stats/', include('apps.stats.urls'),),
-    path('client/', include('apps.client.urls'),),
-    path('db/', include('apps.db.urls'),),
+    path('admin_panel/', include('admin_panel.urls'),),
+    path('branch/', include('branch.urls'),),
+    path('employee/', include('employee.urls'),),
+    path('queue/', include('eqs.urls'),),
+    path('talon/', include('talon.urls'),),
+    path('base/', include('base.urls'),),
+    path('stats/', include('stats.urls'),),
+    path('client/', include('client.urls'),),
+    path('db/', include('db.urls'),),
 ]
 
 if settings.DEBUG:

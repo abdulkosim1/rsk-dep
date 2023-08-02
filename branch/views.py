@@ -5,13 +5,13 @@ from rest_framework.response import Response
 from rest_framework.request import Request
 from rest_framework.views import APIView
 from rest_framework import mixins
-from apps.base.serializers import ServiceSerializer
+from base.serializers import ServiceSerializer
 
-from services import constants
-from services.permissions import IsOperator
-from apps.eqs.serializers import EQSSerializer
-from apps.talon.models import Monitor, Talon
-from apps.eqs.models import EQS
+from main.services import constants
+from main.services.permissions import IsOperator
+from eqs.serializers import EQSSerializer
+from talon.models import Monitor, Talon
+from eqs.models import EQS
 
 from .models import Branch, RunningString, Advertisement, Window
 from .serializers import (BranchSerializer, 

@@ -4,7 +4,7 @@ from datetime import timedelta, datetime
 from django.utils import timezone
 from django.db import models
 
-from services import constants
+from main.services import constants
 from branch.models import Branch, Window
 from client.models import Client
 from base.models import Service

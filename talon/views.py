@@ -6,12 +6,12 @@ from rest_framework import status
 from django.utils import timezone
 from datetime import timedelta, date
 
-from services.authentication import ClientTokenAuthentication
-from services.permissions import IsOperator, IsRegistrator
-from services import constants
-from apps.stats.models import Actions
-from apps.base.models import Service
-from apps.eqs.models import EQS
+from main.services.authentication import ClientTokenAuthentication
+from main.services.permissions import IsOperator, IsRegistrator
+from main.services import constants
+from stats.models import Actions
+from base.models import Service
+from eqs.models import EQS
 
 from . serializers import TalonSerializer, TalonCreateSerializer
 from . models import Talon

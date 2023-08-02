@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
 from . models import EQS
-from apps.talon.models import Talon
-from apps.base.serializers import DocumentSerializer
+from talon.models import Talon
+from base.serializers import DocumentSerializer
 
 
 class EQSSerializer(serializers.ModelSerializer):

@@ -3,20 +3,20 @@ from rest_framework.decorators import action
 from rest_framework.generics import CreateAPIView
 from rest_framework.viewsets import ModelViewSet,GenericViewSet
 from rest_framework.response import Response
-from apps.admin_panel.models import Report
+from admin_panel.models import Report
 from django.contrib.auth import get_user_model
 from rest_framework import mixins,status
 from django.shortcuts import get_object_or_404
 from django.http import Http404
 
-from apps.branch.serializers import AdvertisementSerilizer, RunningStringSerializer, WindowSerializer
-from apps.branch.models import Advertisement, Branch, RunningString, Window
-from services.permissions import IsBranchAdmin
-from apps.stats.models import Actions
-from apps.eqs.models import EQS
-from apps.admin_panel import serializers
+from branch.serializers import AdvertisementSerilizer, RunningStringSerializer, WindowSerializer
+from branch.models import Advertisement, Branch, RunningString, Window
+from main.services.permissions import IsBranchAdmin
+from stats.models import Actions
+from eqs.models import EQS
+from admin_panel import serializers
 
-from apps.base.models import (
+from base.models import (
     DayOff,
     LanguageName,
     Service,

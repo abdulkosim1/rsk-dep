@@ -9,12 +9,12 @@ import uuid
 from django.shortcuts import get_object_or_404
 from rest_framework_simplejwt.tokens import RefreshToken, TokenError
 
-from services import constants
-from services.authentication import ClientTokenAuthentication
-from apps.talon.serializers import TalonSerializer
-from services.permissions import IsOwner
-from apps.talon.models import Talon
-from services.utils import normalize_phone
+from main.services import constants
+from main.services.authentication import ClientTokenAuthentication
+from talon.serializers import TalonSerializer
+from main.services.permissions import IsOwner
+from talon.models import Talon
+from main.services.utils import normalize_phone
 
 from .models import Client, CustomToken
 from .serializers import (

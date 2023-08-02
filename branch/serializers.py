@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from apps.base.serializers import LanguageSerializer
+from base.serializers import LanguageSerializer
 
 from .models import Branch, RunningString, Advertisement, Window
-from apps.talon.models import Talon, Monitor
+from talon.models import Talon, Monitor
 
 
 class BranchSerializer(serializers.ModelSerializer):

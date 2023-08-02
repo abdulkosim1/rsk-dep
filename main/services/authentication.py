@@ -1,6 +1,6 @@
 from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
-from apps.client.models import CustomToken
+from client.models import CustomToken
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
 class ClientTokenAuthentication(BaseAuthentication):

@@ -1,8 +1,8 @@
 from django.contrib import admin
 
 from .models import Branch, Window
-from apps.talon.models import Monitor
-from apps.base.models import Service, LanguageName
+from talon.models import Monitor
+from base.models import Service, LanguageName
 
 class ServiceInline(admin.TabularInline):
     model = Service.branch.through

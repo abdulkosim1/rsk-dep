@@ -3,7 +3,7 @@ from .models import CustomToken
 from rest_framework import serializers
 
 from .tasks import send_sms_code
-from services.utils import normalize_phone
+from main.services.utils import normalize_phone
 from . models import Client
 
 

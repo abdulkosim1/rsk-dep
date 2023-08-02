@@ -4,9 +4,9 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from datetime import date, timedelta
 from django.db.models import Avg
 
-from services import constants
-from apps.base.serializers import ServiceSerializer
-from apps.talon.models import Talon
+from main.services import constants
+from base.serializers import ServiceSerializer
+from talon.models import Talon
 
 User = get_user_model()
 

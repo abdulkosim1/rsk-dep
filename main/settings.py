@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool, default=False)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*').split(',')
+ALLOWED_HOSTS = ['34.159.243.132',]
 
 
 # Application definition
@@ -177,7 +177,7 @@ TWILIO_NUMBER = config('TWILIO_NUMBER')
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-        'services.authentication.ClientTokenAuthentication'
+        'main.services.authentication.ClientTokenAuthentication'
     ),
 }
 

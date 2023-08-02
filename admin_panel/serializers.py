@@ -3,11 +3,11 @@ from rest_framework import serializers
 from django.db.models import Avg
 from datetime import datetime
 
-from apps.base.models import Service, Document, LanguageName, DayOff
-from apps.branch.models import Advertisement, RunningString, Window, Branch
-from apps.admin_panel.models import Report
-from apps.stats.models import Actions
-from apps.eqs.models import EQS
+from base.models import Service, Document, LanguageName, DayOff
+from branch.models import Advertisement, RunningString, Window, Branch
+from admin_panel.models import Report
+from stats.models import Actions
+from eqs.models import EQS
 
 User = get_user_model()
 

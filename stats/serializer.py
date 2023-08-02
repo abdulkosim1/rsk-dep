@@ -5,8 +5,8 @@ from django.db.models import Count
 from django.db.models.functions import TruncMonth
 import calendar
 
-from services import constants
-from apps.talon.models import Talon
+from main.services import constants
+from talon.models import Talon
 from .models import EmployeeRating
 
 

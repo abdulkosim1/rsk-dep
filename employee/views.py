@@ -7,10 +7,10 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.views import TokenObtainPairView
 from datetime import date
 
-from services import constants
-from services.permissions import IsOperatorOrRegistrator
-from apps.stats.models import Actions
-from apps.talon.models import Talon
+from main.services import constants
+from main.services.permissions import IsOperatorOrRegistrator
+from stats.models import Actions
+from talon.models import Talon
 from . serializers import (
     UserSerializer, 
     OperatorQueueSerializer, 

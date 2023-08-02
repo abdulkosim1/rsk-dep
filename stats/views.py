@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.request import Request
 from rest_framework.views import APIView
 
-from services.permissions import IsBranchAdmin
+from main.services.permissions import IsBranchAdmin
 from . serializer import EmployeeRatingSerializer, EmployeeRatingCreateSerializer, BranchTalonStatsSerializer
 from . models import EmployeeRating
 

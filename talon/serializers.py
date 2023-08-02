@@ -4,11 +4,11 @@ import qrcode
 import base64
 from io import BytesIO
 
-from services import constants
+from main.services import constants
 from .models import Talon
-from apps.branch.serializers import BranchSerializer
-from apps.base.models import DayOff
-from apps.client.models import Client
+from branch.serializers import BranchSerializer
+from base.models import DayOff
+from client.models import Client
 
 
 class TalonSerializer(serializers.ModelSerializer):

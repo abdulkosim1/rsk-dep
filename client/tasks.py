@@ -1,5 +1,5 @@
 from django.conf import settings
-from config.celery import app
+from main.celery import app
 
 @app.task
 def send_sms_code(phone,code,body):

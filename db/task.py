@@ -2,7 +2,7 @@
 from datetime import datetime
 from django.conf import settings
 import subprocess
-from config.celery import app
+from main.celery import app
 import os
 
 @app.task
